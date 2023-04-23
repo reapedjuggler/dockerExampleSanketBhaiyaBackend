@@ -3,7 +3,7 @@ name: CICD sanket bhaiya backend class
 on:
   push:
     branches:
-        - main
+        - dev
 
 jobs:
   build:
