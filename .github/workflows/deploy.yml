@@ -18,10 +18,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
          node-version: ${{ matrix.node-version }}
-      - name: npm install and build
+      - name: npm install
         run: |
           npm install
-          npm run build
 
         env: 
           CI: true   
@@ -48,7 +47,6 @@ jobs:
                cd ~/dockerExampleSanketBhaiyaBackend
                git pull origin main
                npm install
-               npm run build
                pm2 restart api
             
 
