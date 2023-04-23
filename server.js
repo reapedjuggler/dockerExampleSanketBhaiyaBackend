@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 const port = 8000;
 
 app.get("/", (req, res) => {
-    // console.log("hello in the get route at \"/");
+    console.log("hello in the get route at \"/");
     res.send("Hello from the other side!!!!!!");
 })
 

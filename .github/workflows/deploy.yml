@@ -9,13 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-      matrix: // multiple version of one lang
+      matrix:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2 // checks out the code
+      - uses: actions/checkout@v2
       - name: Use node js
-        uses: actions/setup-node@v1  // sets the node version
+        uses: actions/setup-node@v1
         with:
          node-version: ${{ matrix.node-version }}
       - name: npm install
