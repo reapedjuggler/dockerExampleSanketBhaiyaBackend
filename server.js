@@ -10,8 +10,6 @@ app.use(bodyParser.json())
 // PORT on host machine
 const port = 5001;
 
-// hello
-
 app.get("/", (req, res) => {
     console.log("hello in the get route at \"/");
     res.send("Hello from the other side!!!!!!");
