@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 
-const app = express();
+const app = express(); 
 
 // To parse form data into JSON and url-encoded form data;
 bodyParser.urlencoded({ extended: false });
