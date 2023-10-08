@@ -8,7 +8,7 @@ bodyParser.urlencoded({ extended: false });
 app.use(bodyParser.json())
 
 // PORT on host machine
-const port = 8000;
+const port = 6000;
 
 app.get("/", (req, res) => {
     // console.log("hello in the get route at \"/");
